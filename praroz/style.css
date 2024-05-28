@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century;
+    
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    
+    margin-top: 30px;
+    margin-right: 60px;
+    min-height: 100px;
+    font-size: 17px;
+    
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: goldenrod;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+ul li a:hover{
+    color: white;
+    background-color: goldenrod;
+    border-radius: 1px;
+}
+
+ul li.one a{
+    color: white;
+    background-color: goldenrod;
+    border-radius: 1px;
+
+}
+
+.active img{
+    float: left;
+    width: 70px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.main{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 45%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    font-size: 70px;
+    color: goldenrod;
+}
+
+.button{
+    position: absolute;
+    top: 53%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+
+}
+
+.btn{
+    padding: 7px 30px;
+    border: 1px solid goldenrod;
+    color: white;
+    transition: 0.6s ease-in-out;
+    
+}
+
+.button a{
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: goldenrod;
+    color: white;
+    
+}
+
+.sub-menu{
+    display: none;
+    position: relative;
+    top: 3%;
+}
+
+.sub-menu ul{
+    position: absolute;
+}
+
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 45, 117);
+    margin-top: 12px;
+    margin-left: -8px;
+}
+
+.main ul li:hover .sub-menu{
+    display: block;
+    margin: 6px;
+}
+
+.main ul li:hover .sub-menu ul li{
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px white;
+    background: transparent;
+    transition: 0.4s ease;
+    text-align: left;
+    border-radius: 0px;
+
+}
